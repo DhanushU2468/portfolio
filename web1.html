@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+      .moving-image {
+        width: 250px; /* Adjust size of the image */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fits nicely */
+        border-radius: 50%; /* Make it a circular shape */
+        animation: moveUpDown 2s ease-in-out infinite; /* Apply smooth up-and-down animation */
+        display: block; /* Center-align the image (if needed) */
+        margin: 0 auto; /* Center the image horizontally */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    }
+    
+    @keyframes moveUpDown {
+        0%, 100% {
+            transform: translateY(0); /* Starting and ending position */
+        }
+        50% {
+            transform: translateY(-30px); /* Middle position, moves up */
+        }
+    }
+    
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            /* Removed black background */
+            background-color: transparent;
+        }
+
+        .header .header-right a {
+            text-decoration: none;
+            color: #000000; /* Changed text color to black */
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .header .header-right a:hover {
+            text-decoration: underline;
+        }
+
+        /* Technologies section styling */
+        .tech {
+            padding: 20px;
+            background: linear-gradient(90deg, #7e0a9f 0%, #ea09b2 100%);
+            text-align: center;
+        }
+
+        .tech img {
+            margin: 10px;
+        }
+
+        /* Projects Section Styling */
+        .projects {
+            padding: 50px 20px;
+            background: linear-gradient(90deg, #7e0a9f 0%, #ea09b2 100%);
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .projects h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .projects ul li {
+            margin: 10px 0;
+        }
+
+        .projects ul li a {
+            text-decoration: none;
+            color: #0078d4;
+            font-size: 1.1rem;
+        }
+
+        .projects ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Certifications styling placeholder */
+        .certifications {
+            padding: 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .certifications h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <a href="#default" class="logo"><h2>PORTFOLIO</h2></a>
+        <div class="header-right">
+            <a href="#tech"><h2>Languages</h2></a>
+            <a href="#projects"><h2>Projects</h2></a>
+            <a href="#certifications"><h2>Certifications</h2></a>
+        </div>
+    </div>
+
+    <!-- Welcome Section -->
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+    <img src="dhanush.jpeg" alt="oval" class="moving-image">
+
+    <h1>
+        <a href="#" class="typewrite" data-period="2000" data-type='[ "Hi, I am Dhanush", "I am a Data Science Engineer", "Machine Learning Expert.", "Big Data Analyst." ]'>
+          <span class="wrap"></span>
+        </a>
+    </h1>
+
+    <!-- Technologies Section -->
+    <div class="tech" id="tech">
+        <h1>TECHNOLOGIES</h1>
+        <img src="python.jpg" alt="Python" style="width: 140px">
+        <img src="java1.jpeg" alt="Java" style="width: 140px">
+        <img src="p2.png" alt="HTML/CSS" style="width: 140px">
+        <img src="ml.jpeg" alt="Machine Learning" style="width: 140px">
+        <img src="pw.png" alt="Power BI" style="width: 140px">
+        <img src="sql.jpg" alt="SQL" style="width: 140px">
+        <img src="sea.png" alt="SEA" style="width: 140px">
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects" id="projects">
+      <h1 style="color: white;">PROJECTS</h1>
+
+      <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project-card">
+              <img src="pr1.png" alt="customized chatbot">
+              <h3>Admin portal chatbot</h3>
+              <p> It was a project provide by the college to create a admin portal chatbot that analysis the data of the college and retrives the data to support the customer interaction using  modern web technologies.</p>
+              <div class="tech-stack">
+                  <span>html</span>
+                  <span>css</span>
+                  <span>javascript</span>
+                  <span>Botpress</span>
+                  <span>webchat integration</span>
+              </div>
+            
+              <div class="project-buttons">
+                <!-- Replace the URL below with your actual demo link -->
+                <a href="http://127.0.0.1:5502/chatbot/fr.html" class="btn" target="_blank">Demo</a>
+                <a href="https://github.com/DhanushU2468/adminportalchatbot.git" class="btn" target="_blank">Source</a>
+            </div>
+          </div>
+  
+          <!-- Project 2 -->
+          <div class="project-card">
+              <img src="project2-thumbnail.jpg" alt="Milestones App">
+              <h3></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ducimus pariatur eos modi vero vitae quae impedit! Illum quisquam aliquam explicabo ea sapiente dolorem labore illo totam nesciunt, distinctio alias deserunt deleniti, officia sequi facilis praesentium perspiciatis? Dolore earum consequatur at, porro laboriosam officia, similique aperiam quod explicabo itaque quam.</p>
+              <div class="tech-stack">
+                  <span>React</span>
+                  <span>Express</span>
+                  <span>Node</span>
+                  <span>MongoDB</span>
+                  <span>Web3.js</span>
+                  <span>Solidity</span>
+                  <span>DaisyUI</span>
+              </div>
+              <div class="project-buttons">
+                  <a href="#" class="btn">Demo</a>
+                  <a href="#" class="btn">Source</a>
+              </div>
+          </div>
+  
+          <!-- Project 3 -->
+          <div class="project-card">
+              <img src="project3-thumbnail.jpg" alt="PromptHub">
+              <h3>PromptHub: A Platform for Creative Prompts</h3>
+              <p>PromptHub is a dynamic web application built with Next.js, MongoDB, and Tailwind CSS. It fosters a community-driven environment for creativity and innovation.</p>
+              <div class="tech-stack">
+                  <span>Next.js</span>
+                  <span>Node</span>
+                  <span>MongoDB</span>
+                  <span>Tailwind</span>
+              </div>
+              <div class="project-buttons">
+                  <a href="#" class="btn">Demo</a>
+                  <a href="#" class="btn">Source</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  
+    <!-- Certifications Section -->
+    <div class="certifications" id="certifications">
+        <h1>CERTIFICATIONS</h1>
+        <p>Details of certifications can go here.</p>
+    </div>
+
+    <!-- Typing Animation Script -->
+    <script>
+        var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+    </script>
+</body>
+</html>
